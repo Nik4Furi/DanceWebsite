@@ -1,0 +1,23 @@
+//- index.pug
+doctype html
+html
+  head
+    block style
+      include ../static/style.css
+  body
+   nav#navbar 
+    ul 
+     #logo 
+      img(src="../static/img/harry.jpg", alt="logo")
+      | NDA
+     li #[a(href='/') Home]
+     li #[a(href = '/') About]
+     li #[a(href = '/contact') Contact]
+     li #[a(href = '/') Services]
+   block content
+    
+   block foot 
+      footer#footer 
+        | copyright @ 2019 NikhilDanceAcademy.com | All rights reserved
+   block script
+      include ../static/index.js

@@ -1,0 +1,57 @@
+//- index.pug
+doctype html
+html
+  head
+    title Nikhil Dance Academy
+    style
+      include ../static/style.css
+  body
+   nav#navbar 
+    ul 
+     #logo 
+      img(src="../static/img/harry.jpg", alt="logo")
+      | NDA
+     li #[a(href='/') Home]
+     li #[a(href = '/') About ]
+     li #[a(href = '/') Contact]
+     li #[a(href = '/') Services]
+    
+   section#introSection 
+    div Welcome Nikhil's Dance Academy 
+    div.small small eat sleep learn dance repeat 
+   section#missionSection 
+    h2 Our mission
+    .card 
+      h3 Dance Perfection
+      .card-box 
+        .card-img 
+           img(src="../static/img/card3.jpg", alt="card3")
+        .card-content 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil. Eaque veniam hic ratione nobis sed!
+        
+    .card 
+      h3 Dance  the way you like
+      .card-box 
+        .card-img 
+           img(src="../static/img/card1.jpg", alt="card-1")
+        .card-content 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil. Eaque veniam hic ratione nobis sed!
+    .card 
+      h3 Expert Teaching
+      .card-box 
+        .card-img 
+           img(src="../static/img/card2.jpg", alt="card-2")
+        .card-content 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil. Eaque veniam hic ratione nobis sed!
+   section#sponsersSection 
+    h2 Our sponsers
+    #sponsers  
+     img(src="../static/img/amazon.png", alt="sponsers" class="spimg" )
+     img(src="../static/img/apple.png", alt="sponsers" class="spimg" )
+     img(src="../static/img/google.png", alt="sponsers" class="spimg" )
+     img(src="../static/img/microsoft.png", alt="sponsers" class="spimg" )
+
+   footer#footer 
+    | copyright @ 2019 NikhilDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js

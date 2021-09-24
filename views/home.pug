@@ -1,0 +1,47 @@
+extends base.pug 
+
+block style 
+ style
+   include ../static/style.css
+
+block content 
+  
+    
+  section#introSection 
+    div Welcome Nikhil's Dance Academy 
+    div.small small eat sleep learn dance repeat 
+  section#missionSection 
+    h2 Our mission
+    .card 
+      h3 Dance Perfection
+      .card-box 
+        .card-img 
+           img(src="../static/img/card3.jpg", alt="card3")
+        .card-content 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil. Eaque veniam hic ratione nobis sed!
+        
+    .card 
+      h3 Dance  the way you like
+      .card-box 
+        .card-img 
+           img(src="../static/img/card1.jpg", alt="card-1")
+        .card-content 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil. Eaque veniam hic ratione nobis sed!
+    .card 
+      h3 Expert Teaching
+      .card-box 
+        .card-img 
+           img(src="../static/img/card2.jpg", alt="card-2")
+        .card-content 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil. Eaque veniam hic ratione nobis sed!
+  section#sponsersSection 
+    h2 Our sponsers
+    #sponsers  
+     img(src="../static/img/amazon.png", alt="sponsers" class="spimg" )
+     img(src="../static/img/apple.png", alt="sponsers" class="spimg" )
+     img(src="../static/img/google.png", alt="sponsers" class="spimg" )
+     img(src="../static/img/microsoft.png", alt="sponsers" class="spimg" ) 
+
+
+block script 
+ script(src="../ststic/index.js")

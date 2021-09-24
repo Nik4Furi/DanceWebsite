@@ -1,0 +1,17 @@
+{
+  "name": "dancewebsite",
+  "version": "1.0.0",
+  "description": "This  website is core of dance you learn you want ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Gurjar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "pug": "^3.0.2"
+  }
+}
