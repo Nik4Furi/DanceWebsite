@@ -12,6 +12,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    /* height: 25vh; */
     
     
 }
@@ -46,7 +47,7 @@
 }
 #logo img{
     height: 42px;
-    /* filter: invert(1); */
+    /* filter: invert(45%); */
 
 }
 #introSection {
@@ -127,8 +128,9 @@
     padding: 0 10px;
 }
 .card-content p{
-    font-size: 24px;
+    /* font-size: 24px; */
     color: red;
+    padding: 12px;
 }
 #sponsers{
     height: 120px;
@@ -141,4 +143,29 @@
 #sponsers img{
     height: 100%;
     margin: 20px;
+}
+
+@media only screen and (max-width:1100px) {
+    .mission-container{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* height: 650px; */
+        justify-content: center;
+        align-items: center;
+
+    }
+    #missionSection{
+        overflow: scroll;
+
+    }
+    .card{
+        width: 30%;
+        height: 30%;
+    }
+    .card-content{
+        padding: 4px;
+
+    }
+    
 }

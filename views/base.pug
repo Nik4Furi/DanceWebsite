@@ -5,15 +5,17 @@ html
     block style
       include ../static/style.css
   body
-   nav#navbar 
+   nav#navbar
     ul 
-     #logo 
-      img(src="../static/img/harry.jpg", alt="logo")
-      | NDA
-     li #[a(href='/') Home]
-     li #[a(href = '/') About]
-     li #[a(href = '/contact') Contact]
-     li #[a(href = '/') Services]
+     
+      #logo 
+       img(src="../static/img/logo.png", alt="logo")
+       | NDA
+      li #[a(href='/') Home]
+      li #[a(href = '/') About]
+      li #[a(href = '/contact') Contact]
+      li #[a(href = '/') Services]
+       
    block content
     
    block foot 
